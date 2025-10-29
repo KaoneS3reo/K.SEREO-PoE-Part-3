@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Providing Assistance To Students Regarding South African Bursaries">
+    <meta name="Keywords"
+        content="Bursary Asssistance, minimum requirements for bursaries and consultations,Bursaries,second year students bursaries,private institutions bursaries">
+    <title>Bursary Assistance|SA Bursaries</title>
+    <link rel="stylesheet" href="style.css"/>
+    <meta property="og:url" content="https://www.facebook.com/SouthAfricaBursaries/"/>
+    <meta property="og:title" content="Bursary Assistance|SA Bursaries">
+    <meta property="og:description" content="Providing Assistance To Students Regarding South African Bursaries">
+    <meta property="og:image" content="images/a516be89-86ef-43b4-b809-26fd817c0c71."> <!--Dummy,create real one-->
+</head>
+<body>
+  <header>
+    <nav>
+      <h1 align="center">BursaryLinkNPO</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="enquiry.html">Enquiry</a></li>
+        <li><a href="contactus.html">Contact</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <section>
+    <form name="myForm" action="/action_page.php" onsubmit="return formValidation()" method="post">
+    <!--system accepts the name of the user and display it in a 'Welcome' message-->
+     <h3 style="text-align: center;" id="userFirstName"></h3></label>
+    <h2 align="center">Welcome to BursaryLinkNPO</h2>
+    <h4 align="center">Bursary Link NPO</h4>
+    <p align="center">
+      <img src="images.html/a516be89-86ef-43b4-b809-26fd817c0c71.png" 
+           alt="BursaryLinkNPO Logo" 
+           height="250" width="260">
+    </p>
+    <p align="center">Experience easy access to multiple bursaries in one place</p>
+    <p align="center"><a href="services.html">View Services</a></p>
+  </section>
+
+  <section>
+    <p align="center"><b>The following table consists of various trustworthy bursaries that we highly recommend</b></p>
+    <table border="1" style="margin-left:auto;margin-right: auto;">
+      <tr>
+        <th>#</th> 
+        <th>List of Bursaries</th>
+        <th>More Options</th>
+        <th>Extra Resources</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Creative Futures Academy<br>
+          <a href="https://studytrust.org.za/bursaries/" target="_blank">StudyTrust – Bursaries & Scholarships</a>
+        </td>
+        <td>Investec Bursary<br>
+          <a href="https://zabusaries.com/bursaries-open-for-2025-in-south-africa/" target="_blank">ZABursaries – 2025 bursaries open</a>
+        </td>
+        <td>Portia M Bursary<br>
+          <a href="https://www.bursariesafrica.co.za/a-z-pages/" target="_blank">BursariesAfrica – A-Z bursary directory</a>
+        </td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Transnet Bursary<br>
+          <a href="https://otagouni.com/list-of-government-bursaries-in-south-africa/" target="_blank">Government Bursaries</a>
+        </td>
+        <td>Funza Lushaka Bursary<br>
+          <a href="https://southafricalists.com/bursaries/" target="_blank">South Africa Lists</a>
+        </td>
+        <td>Eskom Bursary Scheme<br>
+          <a href="https://bursaryforms.co.za/bursaries-to-apply-for-in-2026/" target="_blank">Top 2025 Bursaries</a>
+        </td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>KPMG Bursary<br>
+          <a href="https://fundiconnect.co.za/bursaries-open-for-applications-in-2025/" target="_blank">SAADP Bursary – FundiConnect</a>
+        </td>
+        <td>Standard Bank Bursary<br>
+          <a href="https://fundiconnect.co.za/bursaries-open-for-applications-in-2025/" target="_blank">SAADP Bursary – FundiConnect</a>
+        </td>
+        <td>AECI Bursary Programme<br>
+          <a href="https://fundiconnect.co.za/bursaries-open-for-applications-in-2025/" target="_blank">SAADP Bursary – FundiConnect</a>
+        </td>
+      </tr>
+    </table>
+  </section>
+
+  <section>
+    <h3 align="center">Please Insert Your Information So That We Can Assist You</h3>
+    <div class="myHeading">
+        <h3>User registration form</h3>
+    <form action="/action.php"></form>
+<hr>
+    <form id="registerForm" method="POST" onsubmit="return validateForm()"> 
+        <fieldset>
+            <legend>Personal Information</legend>
+            <div class="input-row">
+                <div class="input-group">
+                    <label for="firstName">First name:</label>
+                    <input type="text" id="firstName" name="firstName" placeholder="Enter first name">
+                    <span class="error" id="firstNameError"></span>
+                </div>
+                <div class="input-group">
+                    <label for="lastName">Last name:</label>
+                    <input type="text" id="lastName" name="lastName" placeholder="Enter last name">
+                    <span class="error" id="lastNameError"></span>
+                </div>
+            </div>
+            <div class="input-row">
+                <div class="input-group">
+                    <label for="gender">Gender</label>
+                    <select id="gender" name="gender">
+                        <option value="">--Select gender--</option>
+                        <option value="Female">Female</option>
+                        <option value="Male">Male</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <span class="error" id="genderError"></span>
+                </div>
+                <div class="input-group">
+                    <label for="race">Race:</label>
+                    <select id="race" name="race">
+                        <option value="">--Select race--</option>
+                        <option value="African">African</option>
+                        <option value="Coloured">Coloured</option>
+                        <option value="White">White</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <span class="error" id="raceError"></span>
+                </div>
+            </div>
+            <div class="input-row">
+                <div class="input-group">
+                    <label for="dob">Date of birth</label>
+                    <input type="date" id="dob" name="dob" placeholder="YYYY-MM-DD">
+                    <span class="error" id="dobError"></span>
+                </div>
+                <div class="input-group">
+                    <label for="pob">Place of Birth:</label>
+                    <input type="text" id="pob" name="pob" placeholder="Enter place of birth">
+                    <span class="error" id="pobError"></span>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Account Details</legend>
+            <div class="input-row">
+                <div class="input-group">
+                    <label for="email">Email address:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter email">
+                    <span class="error" id="emailError"></span>
+                </div>
+                <div class="input-group">
+                    <label for="confirmEmail">Confirm email address:</label>
+                    <input type="email" id="confirmEmail" name="confirmEmail" placeholder="Confirm email">
+                    <span class="error" id="confirmEmailError"></span>
+                </div>
+            </div>
+            <div class="input-row">
+                <div class="input-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter password">
+                    <span class="error" id="passwordError"></span>
+                </div>
+                <div class="input-group">
+                    <label for="confirmPassword">Confirm password:</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm password">
+                    <span class="error" id="confirmPasswordError"></span>
+                </div>
+            </div>
+        </fieldset>
+        <div class="button-container">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+    <div id="output"></div>
+    <script src="testing.js"></script>
+</body>
+  </section>
+    </main>
+
+    <footer>
+        <p align="center">&copy; 2025 BursaryLinkNPO | Designed for WEDE5020 POE</p>
+    </footer>
+</body>
+</html>
